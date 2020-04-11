@@ -50,7 +50,7 @@ app.put("/repositories/:id", (request, response) => {
     title,
     url,
     techs,
-    likes: 0
+    likes: repositories[repoIndex].likes
   }
 
   repositories[repoIndex] = repoTemp;
